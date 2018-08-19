@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .modal.show {
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: flex-start;
+        }
+
+        #formEntry {
+            background-color: #D0E4C7;
+            border-radius: 16px;
+            box-shadow: 3px 5px 8px grey;
+            margin: 40px 20px 20px 20px;
+            padding: 30px 30px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <form role="form" id="formEntry" name="formEntry" method="post" onsubmit="" action="">
+            <div class="form-group col-md-6">
+                <label for="fname">First Name</label>
+                <input type="text" name="firstName" id="fname" class="form-control" value="" />
+            </div>
+            <div class="form-group col-md-6">
+                <label for="lname">Last Name</label>
+                <input type="text" name="lastName" id="lname" class="form-control" value="" />
+            </div>
+            <div class="form-group col-md-4">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" value="" />
+            </div>
+            <div class="form-group col-md-4">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" class="form-control" value="" />
+            </div>
+            <div class="form-group col-md-6">
+                <label for="address">Street Address</label>
+                <input type="text" name="address" id="address" class="form-control" value="" />
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" class="form-control" value="" />
+            </div>
+
+            <div class="form-group col-md-3">
+                <label for="county">County</label>
+                <input type="text" name="county" id="county" class="form-control" value="" />
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="state">State</label>
+                <input type="text" name="state" id="state" class="form-control" value="" />
+            </div>
+
+            <div class="form-group col-md-3">
+                <label for="zip">Zip</label>
+                <input type="text" name="zip" id="zip" class="form-control" value="" />
+            </div>
+            <div class="mx-auto">
+                <input type="button" name="btn" value="Submit" id="submitBtn" data-toggle="modal" data-target="#confirm-submit" class="btn btn-success btn-lg"/>
+            </div>
+        </form> <!-- end of form -->
+    </div> <!-- end of container -->
+</body>
+
+</html>
