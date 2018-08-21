@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>template model 1</title>
     <link href="https://segurancaassets.pontaltech.com.br/ionic.min.css" rel="stylesheet">
     <script src="https://segurancaassets.pontaltech.com.br/ionic.bundle.min.js"></script>
@@ -11,9 +10,6 @@
 
     <style>
 
-        body {
-overflow: scroll;
-}
         body{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
@@ -72,33 +68,36 @@ overflow: scroll;
     </style>
 </head>
 <body>
-   <header>
-       <img class="logo" src="../images/pontal_telecom.png">
-       <div style="clear:both;"></div>
-   </header>
-   <section>
-        <div class="firstImpression">
-            <p>COM A PONTAL TELECOM<br>VOCÊ VAI ALÉM</p>
-        </div>
-        <div class="aboutUs">
-            <div class="dot"><i class="fas fa-phone"></i></div>
-            <div class="dot"><i class="far fa-thumbs-up"></i></div>
-            <div class="dot"><i class="fas fa-code-branch"></i></div>
-            <p>
-                A marca <b>Pontal</b> representa o progresso diante de um cenário cada vez mais desafiador: conectar empresas com seus públicos de forma ágil e moderna.
-            </p>
-            <button class="button button-positive button-block" href="">Ligue-me</button>
-            <button class="button button-dark button-block" href="">Ligar</button>
-            <button class="button button-dark button-block" href="">Ligue-me mais tarde</button>
-            <button class="button button-dark button-block" href="">Quero mandar um email</button>
-            <button class="button button-dark button-block" href="">Quero enviar uma mensagem por Whatsapp</button>
-        </div>
-   </section>
-   <div class="pre"></div>
-    <footer>
-        <img class="logo" src="../images/pontal_telecom.png">
-        <a href="www.pontaltelecom.com.br">pontaltelecom.com.br</a>
-    </footer>
 
+    <ion-content>
+        <header>
+            <img class="logo" src="../images/pontal_telecom.png">
+            <div style="clear:both;"></div>
+        </header>
+        <section>
+             <div class="firstImpression">
+                 <p>COM A PONTAL TELECOM<br>VOCÊ VAI ALÉM</p>
+             </div>
+             <div class="aboutUs">
+                 <div class="dot"><i class="fas fa-phone"></i></div>
+                 <div class="dot"><i class="far fa-thumbs-up"></i></div>
+                 <div class="dot"><i class="fas fa-code-branch"></i></div>
+                 <p>
+                     A marca <b>Pontal</b> representa o progresso diante de um cenário cada vez mais desafiador: conectar empresas com seus públicos de forma ágil e moderna.
+                 </p>
+                 <button class="button button-positive button-block" href="">Ligue-me</button>
+                 <button class="button button-dark button-block" href="">Ligar</button>
+                 <button class="button button-dark button-block" href="">Ligue-me mais tarde</button>
+                 <button class="button button-dark button-block" href="">Quero mandar um email</button>
+                 <button class="button button-dark button-block" href="">Quero enviar uma mensagem por Whatsapp</button>
+             </div>
+        </section>
+        <div class="pre"></div>
+         <footer>
+             <img class="logo" src="../images/pontal_telecom.png">
+             <a href="www.pontaltelecom.com.br">pontaltelecom.com.br</a>
+         </footer>
+    </ion-content>
+    <ion-view></ion-view>
 </body>
 </html>
