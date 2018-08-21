@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,13 @@
     <title>template model 1</title>
     <link href="https://segurancaassets.pontaltech.com.br/ionic.min.css" rel="stylesheet">
     <script src="https://segurancaassets.pontaltech.com.br/ionic.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
     <style>
+
+        body {
+overflow: scroll;
+}
         body{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
@@ -15,12 +21,12 @@
             padding: 10px;
             height: 70px;
         }
-        header img {
+        .logo {
             width: 50%;            
         }
         .firstImpression{
             width: 100%;
-            height: 250px;
+            height: 200px;
             background-image: url("../images/background-happy-woman.jpg");
             background-size: 100%;
             background-repeat: no-repeat;
@@ -38,24 +44,61 @@
             padding: 15px;
             text-align: center;
         }
+        .dot {
+            height: 50px;
+            width: 50px;
+            background-color: #f68734;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right:25px;
+            margin-left:25px;
+            padding: 15px;
+            margin-bottom:10px;
+        }
+        .dot i {
+            width: 100%;
+        }
+
+        .pre{
+            background-color: #387ef5;
+            width: 100%;
+            height: 50px;
+        }
+        footer {
+            background-color:#444;
+            width: 100%;
+            height: 150px;
+        }
     </style>
 </head>
 <body>
    <header>
-       <img src="../images/pontal_telecom.png" alt="">
+       <img class="logo" src="../images/pontal_telecom.png">
+       <div style="clear:both;"></div>
    </header>
    <section>
         <div class="firstImpression">
             <p>COM A PONTAL TELECOM<br>VOCÊ VAI ALÉM</p>
         </div>
         <div class="aboutUs">
+            <div class="dot"><i class="fas fa-phone"></i></div>
+            <div class="dot"><i class="far fa-thumbs-up"></i></div>
+            <div class="dot"><i class="fas fa-code-branch"></i></div>
             <p>
                 A marca <b>Pontal</b> representa o progresso diante de um cenário cada vez mais desafiador: conectar empresas com seus públicos de forma ágil e moderna.
             </p>
+            <button class="button button-positive button-block" href="">Ligue-me</button>
+            <button class="button button-dark button-block" href="">Ligar</button>
+            <button class="button button-dark button-block" href="">Ligue-me mais tarde</button>
+            <button class="button button-dark button-block" href="">Quero mandar um email</button>
+            <button class="button button-dark button-block" href="">Quero enviar uma mensagem por Whatsapp</button>
         </div>
    </section>
-   <footer>
+   <div class="pre"></div>
+    <footer>
+        <img class="logo" src="../images/pontal_telecom.png">
+        <a href="www.pontaltelecom.com.br">pontaltelecom.com.br</a>
+    </footer>
 
-   </footer>
 </body>
 </html>
