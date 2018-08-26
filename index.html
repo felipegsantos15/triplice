@@ -7,15 +7,20 @@
     <title>Triplice</title>
     <style>
         .template-model {
-            height: 700px;
+            width: 340px;
+            display: inline-block;
+            margin-left: 100px; 
+        }
+        .template-model img{
             width: 300px;
             margin: 20px;
-            background-color: #999;
-            float: left;
         }
-        .container{
-            margin: 20px 50px 10px 50px; 
-        }
+
+        .template-model img:hover{
+            transition-duration: 2s;
+            width: 350px;
+            margin: 50px;
+        } 
         .title {
             text-align: center;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -28,13 +33,13 @@
     </h1>
     <div class="container">
         <a id="template1" class="template-model" href="template/1">
-            fdf
+            <img src="http://localhost:3000/images/template1.png" alt="template1">
         </a>
         <a id="template2" class="template-model" href="template/2">
-            fdfdf
+            <img src="http://localhost:3000/images/templateEmConstrucao.png" alt="template1">
         </a>
         <a id="template3" class="template-model" href="template/3">
-            sdf
+            <img src="http://localhost:3000/images/templateEmConstrucao.png" alt="template1">
         </a>
     </div>
 </body>
