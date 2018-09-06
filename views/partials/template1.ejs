@@ -14,11 +14,11 @@
             <p>
                {{bodyText}}
             </p>
-            <button class="button button-positive" href="">Ligue-me</button>
-            <button class="button button-dark" href="">Ligar</button>
-            <button class="button button-dark" href="">Ligue-me mais tarde</button>
-            <button class="button button-dark" href="">Quero mandar um email</button>
-            <button class="button button-dark" href="">Quero enviar uma mensagem por Whatsapp</button>
+            <button class="button button-positive" ng-show="callMe" href="">Ligue-me</button>
+            <button class="button button-dark" ng-show="call" href="">Ligar</button>
+            <button class="button button-dark" ng-show="callMeLater" href="">Ligue-me mais tarde</button>
+            <button class="button button-dark" ng-show="email" href="">Quero mandar um email</button>
+            <button class="button button-dark" ng-show="whatsapp" href="">Quero enviar uma mensagem por Whatsapp</button>
         </div>
 </section>
 <div cla l ss="pre"></div>

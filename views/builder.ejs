@@ -16,14 +16,6 @@
         $scope.bodyText = 'A marca Pontal representa o progresso diante de um cenário cada vez mais desafiador: conectar empresas com seus públicos de forma ágil e moderna.';
         $scope.footerImg = '../images/pontal_telecom-logo.png';
         $scope.footerLink = 'www.pontaltelcom.com.br';
-        $scope.call = true;
-        $scope.callMe = true;
-        $scope.callMeLater = true;
-        $scope.email = true;
-        $scope.whatsapp = true;
-
-        
-
     }]);
     </script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -166,24 +158,24 @@
             <input type="textArea" name="lastName" ng-model="bodyText" id="lname" class="form-control" value="" />
         </div>
         <div class="form-group col-md-12">
-            <label ng-model="callMe" >
-            <input type="checkbox" checked="true" id="exampleCheck1">
+            <label>
+            <input ng-model="callMe" type="checkbox" checked="true" id="exampleCheck1">
                 Call Me
             </label>
-            <label ng-model="callMeLater" >
-            <input type="checkbox" checked="true" id="exampleCheck1">
+            <label>
+            <input ng-model="callMeLater" type="checkbox" checked="true" id="exampleCheck1">
                 Call Me Later
             </label>
-            <label ng-model="call" >
-            <input type="checkbox" checked="true" id="exampleCheck1">
+            <label>
+            <input ng-model="call" type="checkbox" checked="true" id="exampleCheck1">
                 Call
             </label>
-            <label ng-model="email" >
-            <input type="checkbox" checked="true" id="exampleCheck1">
+            <label>
+            <input ng-model="email" type="checkbox" checked="true" id="exampleCheck1">
                 Enviar E-mail
             </label>
-            <label ng-model="whatsapp" >
-            <input type="checkbox" checked="true" id="exampleCheck1">
+            <label>
+            <input ng-model="whatsapp" type="checkbox" checked="true" id="exampleCheck1">
                 Whatsapp
             </label>
         </div>
