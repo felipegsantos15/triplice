@@ -16,6 +16,11 @@
         $scope.bodyText = 'A marca Pontal representa o progresso diante de um cenário cada vez mais desafiador: conectar empresas com seus públicos de forma ágil e moderna.';
         $scope.footerImg = '../images/pontal_telecom-logo.png';
         $scope.footerLink = 'www.pontaltelcom.com.br';
+        $scope.call = true;
+        $scope.callMe = true;
+        $scope.callMeLater = true;
+        $scope.email = true;
+        $scope.whatsapp = true;
     }]);
     </script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -157,9 +162,28 @@
             <label for="lname">Texto</label>
             <input type="textArea" name="lastName" ng-model="bodyText" id="lname" class="form-control" value="" />
         </div>
-        
-    
-
+        <div class="form-group col-md-12">
+            <label ng-model="callMe" checked="true">
+            <input type="checkbox" id="exampleCheck1">
+                Call Me
+            </label>
+            <label ng-model="callMeLater" checked="true">
+            <input type="checkbox" id="exampleCheck1">
+                Call Me Later
+            </label>
+            <label ng-model="call" checked="true">
+            <input type="checkbox" id="exampleCheck1">
+                Call
+            </label>
+            <label ng-model="email" checked="true">
+            <input type="checkbox" id="exampleCheck1">
+                Enviar E-mail
+            </label>
+            <label ng-model="whatsapp" checked="true">
+            <input type="checkbox" id="exampleCheck1">
+                Whatsapp
+            </label>
+        </div>
         <div class="form-group col-md-12">
             <label for="zip">logo do rodapé</label>
             <input type="text" name="zip" id="zip" ng-model="footerImg" class="form-control" value="" />
