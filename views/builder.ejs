@@ -4,172 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/templates.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
     <script>
-    var appname = angular.module('appname', []);
-    appname.controller('builderController', ['$scope', function($scope) {
-        $scope.logoImg = '../images/pontal_telecom.png';
-        $scope.backgroundImg = "../images/background-happy-woman.jpg";
-        $scope.pageTitle = 'A pontal vai alem com você';
-        $scope.bodyText = 'A marca Pontal representa o progresso diante de um cenário cada vez mais desafiador: conectar empresas com seus públicos de forma ágil e moderna.';
-        $scope.footerImg = '../images/pontal_telecom-logo.png';
-        $scope.footerLink = 'www.pontaltelcom.com.br';
-        $scope.callMe = true;
-        $scope.callMeLater = true;
-        $scope.call = true;
-        $scope.email = true;
-        $scope.whatsapp = true;
+        var appname = angular.module('appname', []);
+        appname.controller('builderController', ['$scope', function ($scope) {
+            $scope.logoImg = '../images/pontal_telecom.png';
+            $scope.backgroundImg = "../images/background-happy-woman.jpg";
+            $scope.pageTitle = 'A pontal vai alem com você';
+            $scope.bodyText = 'A marca Pontal representa o progresso diante de um cenário cada vez mais desafiador: conectar empresas com seus públicos de forma ágil e moderna.';
+            $scope.footerImg = '../images/pontal_telecom-logo.png';
+            $scope.footerLink = 'www.pontaltelcom.com.br';
+            $scope.callMe = true;
+            $scope.callMeLater = true;
+            $scope.call = true;
+            $scope.email = true;
+            $scope.whatsapp = true;
+            $scope.callMePhrase = 'Ligue-me';
+            $scope.callMeLaterPhrase = 'Ligue-me mais tarde';
+            $scope.callPhrase = 'Ligar';
+            $scope.emailPhrase = 'Envie um email';
+            $scope.whatsappPhrase = 'Mande uma mensagem via whatsapp';
+            $scope.leftJustify = false;
+            $scope.showIcons = false;
 
-        $scope.buildJson = function () {
-            let step = {
-                'logo':$scope.logoImg,
-                'backgroundImg':$scope.backgroundImg
+            $scope.buildJson = function () {
+                let step = {
+                    'logo': $scope.logoImg,
+                    'backgroundImg': $scope.backgroundImg
+                }
+
+                console.log(step);
             }
-
-            console.log(step);
-        }
-
-    }]);
+        }]);
     </script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        .modal.show {
-            display: flex !important;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            align-items: flex-start;
-        }
-
-        #formEntry {
-            float: left;
-            background-color: rgb(216, 216, 216);
-            border-radius: 16px;
-            box-shadow: 3px 5px 8px rgb(206, 206, 206);
-            margin: 30px 15px 20px 15px;
-            padding: 30px 30px;
-            font-size: 18px;
-            font-weight: 500;
-            width: 45%;
-        }
-        .templateModel{
-            margin: 35px 50px;
-            float:right;
-            width: 400px;
-            height: 1000px;
-        }
-
-        iframe {
-            border:none;
-        }
-        body{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        header{
-            padding: 5px;
-            height: 50px;
-        }
-        .logo {
-            width: 50%;            
-        }
-        .firstImpression{
-            width: 100%;
-            height: 200px;
-            background-image: url("../images/background-happy-woman.jpg");
-            background-size: 100%;
-            background-repeat: no-repeat;
-            margin-bottom:20px;
-        }
-        .firstImpression p {
-            color:#fff;
-            font-weight: bold;
-            text-align: center;
-            margin: 0;
-            padding-top:80px;
-            font-size: 15pt;
-            line-height: 30px;
-            text-shadow: 2px 2px 5px #222;
-        }
-        .aboutUs {
-            text-align: center;
-        }
-        .dot {
-            height: 20px;
-            width: 20px;
-            background-color: #f68734;
-            border-radius: 50%;
-            display: inline-block;
-            margin-right:15px;
-            margin-left:15px;
-            padding: 15px;
-            margin-bottom:10px;
-        }
-        .dot i {
-            width: 100%;
-        }
-
-        .pre{
-            margin-top: 50px; 
-            background-color: #387ef5;
-            width: 100%;
-            height: 50px;
-        }
-        .button {
-            width: 95%;
-            border-radius: 3px;
-            border: none;
-            padding: 12px;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            color:#fff;
-            font-weight: bold;
-            font-size:10pt;
-        }
-        .button-positive {
-            background-color: #387ef5;
-        }
-        .button-dark {
-            background-color: #444;
-        }
-        footer {
-            background-color:#444;
-            height: 150px;
-        }
-        footer img{
-            width: 80px;
-            padding-top: 20px;
-            margin-left:auto;
-            margin-right: auto;
-            display: block;
-        }
-        footer a {
-            text-decoration: none;
-        }
-        footer p {
-            color:#fff;
-            text-align: center;
-        }
-    </style>
 </head>
+
 <body ng-controller="builderController">
     <form role="form" id="formEntry" name="formEntry" method="post" onsubmit="" action="">
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">imagens</a>
-                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">textos</a>
-                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">botoes</a>
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+                    aria-selected="true">imagens</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
+                    aria-selected="false">textos</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
+                    aria-selected="false">botoes</a>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <br>
                 <div class="form-group col-md-12">
                     <label for="logoName">Link da imagem</label>
                     <input type="text" ng-model="logoImg" class="form-control">
@@ -184,6 +82,7 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <br>
                 <div class="form-group col-md-12">
                     <label for="fname">Frase da pagina</label>
                     <input type="text" name="firstName" ng-model="pageTitle" id="fname" class="form-control" value="" />
@@ -199,31 +98,52 @@
             </div>
             <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                 <div class="form-group col-md-12">
+                    <br>
                     <label>
-                    <input ng-model="callMe" type="checkbox" checked="true" id="exampleCheck1">
-                        Call Me
+                        <input type="checkbox" ng-model="leftJustify"> texto a esquerda
                     </label>
+                    <br>
                     <label>
-                    <input ng-model="callMeLater" type="checkbox" checked="true" id="exampleCheck1">
-                        Call Me Later
+                        <input type="checkbox" ng-model="showIcons" ng-disabled="!leftJustify"> ativar logos
                     </label>
+                </div>
+                <div class="form-group col-md-12">
                     <label>
-                    <input ng-model="call" type="checkbox" checked="true" id="exampleCheck1">
-                        Call
+                        <input ng-model="callMe" type="checkbox" checked="true" id="exampleCheck1"> Call Me
                     </label>
+                    <br>
+                    <input type="text" name="firstName" ng-model="callMePhrase" id="fname" class="form-control" value="" />
+                </div>
+                <div class="form-group col-md-12">
                     <label>
-                    <input ng-model="email" type="checkbox" checked="true" id="exampleCheck1">
-                        Enviar E-mail
+                        <input ng-model="callMeLater" type="checkbox" checked="true" id="exampleCheck1"> Call Me Later
                     </label>
+                    <input type="text" name="firstName" ng-model="callMeLaterPhrase" id="fname" class="form-control" value="" />
+                </div>
+                <div class="form-group col-md-12">
                     <label>
-                    <input ng-model="whatsapp" type="checkbox" checked="true" id="exampleCheck1">
-                        Whatsapp
+                        <input ng-model="call" type="checkbox" checked="true" id="exampleCheck1"> Call
                     </label>
+                    <input type="text" name="firstName" ng-model="callPhrase" id="fname" class="form-control" value="" />
+                </div>
+                <div class="form-group col-md-12">
+
+                    <label>
+                        <input ng-model="email" type="checkbox" checked="true" id="exampleCheck1"> Enviar E-mail
+                    </label>
+                    <input type="text" name="firstName" ng-model="emailPhrase" id="fname" class="form-control" value="" />
+                </div>
+                <div class="form-group col-md-12">
+                    <label>
+                        <input ng-model="whatsapp" type="checkbox" checked="true" id="exampleCheck1"> Whatsapp
+                    </label>
+                    <input type="text" name="firstName" ng-model="whatsappPhrase" id="fname" class="form-control" value="" />
                 </div>
             </div>
         </div>
         <div class="mx-auto">
-            <input type="button" name="btn" value="Submit" id="submitBtn" data-toggle="modal" data-target="#confirm-submit" ng-click="buildJson()" class="btn btn-success btn-lg"/>
+            <input type="button" name="btn" value="Submit" id="submitBtn" data-toggle="modal" data-target="#confirm-submit" ng-click="buildJson()"
+                class="btn btn-success btn-lg" />
         </div>
     </form>
     <div class="templateModel">
