@@ -14,14 +14,56 @@
             <p>
                {{bodyText}}
             </p>
-            <button class="button button-positive" ng-show="callMe" href="">Ligue-me</button>
-            <button class="button button-dark" ng-show="call" href="">Ligar</button>
-            <button class="button button-dark" ng-show="callMeLater" href="">Ligue-me mais tarde</button>
-            <button class="button button-dark" ng-show="email" href="">Quero mandar um email</button>
-            <button class="button button-dark" ng-show="whatsapp" href="">Quero enviar uma mensagem por Whatsapp</button>
+            <div >
+                <button class="button button-positive" ng-show="callMe" href="">
+                    <div ng-hide="leftJustify">
+                        {{callMePhrase}}
+                    </div>
+                    <div class="toLeft" ng-hide="!leftJustify">
+                        <i class="fas fa-phone" ng-hide="!showIcons"></i>
+                        {{callMePhrase}}
+                    </div>
+                </button>
+                <button class="button button-dark" ng-show="call" href="">
+                    <div ng-hide="leftJustify">
+                        {{callPhrase}}
+                    </div>
+                    <div class="toLeft" ng-hide="!leftJustify">
+                        <i class="fas fa-phone" ng-hide="!showIcons"></i>
+                        {{callPhrase}}
+                    </div>
+                </button>
+                <button class="button button-dark" ng-show="callMeLater" href="">
+                    <div ng-hide="leftJustify">
+                        {{callMeLaterPhrase}}
+                    </div>
+                    <div class="toLeft" ng-hide="!leftJustify">
+                        <i class="far fa-calendar" ng-hide="!showIcons"></i>
+                        {{callMeLaterPhrase}}
+                    </div>
+                </button>
+                <button class="button button-dark" ng-show="email" href="">
+                    <div ng-hide="leftJustify">
+                        {{emailPhrase}}
+                    </div>
+                    <div class="toLeft" ng-hide="!leftJustify">
+                        <i class="fas fa-at" ng-hide="!showIcons"></i>
+                        {{emailPhrase}}
+                    </div>
+                </button>
+                <button class="button button-dark" ng-show="whatsapp" href="">
+                    <div ng-hide="leftJustify">
+                        {{whatsappPhrase}}
+                    </div>
+                    <div class="toLeft" ng-hide="!leftJustify">
+                        <i class="fab fa-whatsapp" ng-hide="!showIcons"></i>
+                        {{whatsappPhrase}}
+                    </div>
+                </button>
+            </div>
         </div>
 </section>
-<div cla l ss="pre"></div>
+<div class="pre"></div>
 <footer>
     <a href="http://{{footerLink}}" target="blank">
     <img src="{{footerImg}}" />
