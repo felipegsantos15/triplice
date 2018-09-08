@@ -90,6 +90,10 @@ header{
     font-weight: bold;
     font-size:10pt;
 }
+.button i {
+    margin-right: 10px; 
+}
+
 .button-positive {
     background-color: #387ef5;
 }
