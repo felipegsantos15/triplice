@@ -39,7 +39,7 @@
             $scope.leftJustify = false;
             $scope.showIcons = false;
             $scope.secundaryColor = "#dddddd";
-
+            $scope.colorPicker; 
             $scope.colors = [
                 {
                     "color": "vermelho",
@@ -101,19 +101,11 @@
                 cores
                 <div class="form-group col-md-12">
                     <label for="logoName">cor de fundo</label>
-                    <input type="color" name="favcolor" value="#ff0000">
+                    <input type="color" name="favcolor" ng-model="colorPicker"> <br>
                 </div>
                 <div class="form-group col-md-12">
                     <label for="logoBackgroud">cor primaria</label>
 
-                    <div  ng-repeat="color in colors">
-                        {{ color.color }}
-                        <div class="color-button" ng-click="changePrimaryColor('{{ color }}')" style="background-color:{{color.color}};"></div>
-                    </div>
-
-
-
-                    
                     <button class="color-button" name="roxo" value="92278f" style="background-color:#92278f;"></button>
                     <button class="color-button" name="roxo-escuro" value="652d92" style="background-color:#652d92;"></button>
                     <button class="color-button" name="vermelho" value="ed1b24" style="background-color:#ed1b24;"></button>                

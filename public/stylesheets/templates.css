@@ -35,6 +35,10 @@ header{
     padding: 5px;
     height: 50px;
 }
+section {
+    height: 700px;
+}
+
 .logo {
     width: 50%;            
 }
@@ -73,10 +77,8 @@ header{
     width: 100%;
 }
 .pre{
-    margin-top: 50px; 
-    background-color: #387ef5;
-    width: 100%;
     height: 50px;
+    background-color: #387ef5;
 }
 .button {
     width: 95%;
@@ -100,6 +102,9 @@ header{
     background-color: #444;
 }
 footer {
+
+    width: 100%;
+    height: 50px;
     background-color:#444;
     height: 150px;
 }
