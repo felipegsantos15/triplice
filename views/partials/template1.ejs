@@ -12,6 +12,12 @@
         header{
             background-color: {{ colorPicker }}; 
         }
+        .primaryColor {
+            background-color: {{ primaryColor }};
+        }
+        .secundaryColor {
+            background-color: {{ secundaryColor }};
+        }
     </style>
 </header>
 <section>
@@ -26,7 +32,7 @@
                {{bodyText}}
             </p>
             <div >
-                <button class="button button-positive" ng-show="callMe" href="">
+                <button class="button primaryColor" ng-show="callMe" href="">
                     <div ng-hide="leftJustify">
                         {{callMePhrase}}
                     </div>
@@ -35,7 +41,7 @@
                         {{callMePhrase}}
                     </div>
                 </button>
-                <button class="button button-dark" ng-show="call" href="">
+                <button class="button secundaryColor" ng-show="call" href="">
                     <div ng-hide="leftJustify">
                         {{callPhrase}}
                     </div>
@@ -44,7 +50,7 @@
                         {{callPhrase}}
                     </div>
                 </button>
-                <button class="button button-dark" ng-show="callMeLater" href="">
+                <button class="button secundaryColor" ng-show="callMeLater" href="">
                     <div ng-hide="leftJustify">
                         {{callMeLaterPhrase}}
                     </div>
@@ -53,16 +59,16 @@
                         {{callMeLaterPhrase}}
                     </div>
                 </button>
-                <button class="button button-dark" ng-show="email" href="">
+                <button class="button secundaryColor" ng-show="email" href="">
                     <div ng-hide="leftJustify">
                         {{emailPhrase}}
                     </div>
-                    <div class="toLeft" ng-hide="!leftJustify">
+                    <div class=primaryColor"toLeft" ng-hide="!leftJustify">
                         <i class="fas fa-at" ng-hide="!showIcons"></i>
                         {{emailPhrase}}
                     </div>
                 </button>
-                <button class="button button-dark" ng-show="whatsapp" href="">
+                <button class="button secundaryColor" ng-show="whatsapp" href="">
                     <div ng-hide="leftJustify">
                         {{whatsappPhrase}}
                     </div>
@@ -74,8 +80,8 @@
             </div>
         </div>
 </section>
-<div class="pre"></div>
-<footer>
+<div class="pre primaryColor"></div>
+<footer class="secundaryColor">
     <a href="http://{{footerLink}}" target="blank">
     <img src="{{footerImg}}" />
         <p>{{footerLink}}</p>
