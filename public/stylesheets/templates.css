@@ -117,3 +117,8 @@ footer p {
     color:#fff;
     text-align: center;
 }
+
+.color-button {
+    height: 20px;
+    width: 40px;
+}

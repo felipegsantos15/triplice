@@ -40,6 +40,18 @@
             $scope.showIcons = false;
             $scope.secundaryColor = "#dddddd";
 
+            $scope.colors = [
+                {
+                    "color": "vermelho",
+                    "hex": "#ed1b24"
+                },
+                {
+                    "color": "roxo",
+                    "hex": "#92278f"
+                }
+            ]
+
+
             $scope.buildJson = function () {
                 let step = {
                     'logo': $scope.logoImg,
@@ -47,6 +59,10 @@
                 }
 
                 console.log(step);
+            }
+
+            $scope.changePrimaryColor = (color) => {
+                console.log(color);
             }
         }]);
     </script>
@@ -89,7 +105,18 @@
                 </div>
                 <div class="form-group col-md-12">
                     <label for="logoBackgroud">cor primaria</label>
-                    <input type="color" name="favcolor" value="#ff0000">
+
+                    <div  ng-repeat="color in colors">
+                        {{ color.color }}
+                        <div class="color-button" ng-click="changePrimaryColor('{{ color }}')" style="background-color:{{color.color}};"></div>
+                    </div>
+
+
+
+                    
+                    <button class="color-button" name="roxo" value="92278f" style="background-color:#92278f;"></button>
+                    <button class="color-button" name="roxo-escuro" value="652d92" style="background-color:#652d92;"></button>
+                    <button class="color-button" name="vermelho" value="ed1b24" style="background-color:#ed1b24;"></button>                
                 </div>
                 <div class="form-group col-md-12">
                     <label for="zip">cor secundaria</label>
