@@ -1,80 +1,80 @@
 <nav>
 <header>
-    <img class="logo" src="{{logoImg}}">
+    <img class="logo" src="{{data.logoImg}}">
     <div style="clear:both;"></div>
     <style>
         .firstImpression{
-            background-image: url("{{backgroundImg}}");
+            background-image: url("{{data.backgroundImg}}");
         }
         section {
-            background-color: {{ colorPicker }}; 
+            background-color: {{data.colorPicker }}; 
         }
         header{
-            background-color: {{ colorPicker }}; 
+            background-color: {{data.colorPicker }}; 
         }
         .primaryColor {
-            background-color: {{ primaryColor }};
+            background-color: {{data.primaryColor }};
         }
         .secundaryColor {
-            background-color: {{ secundaryColor }};
+            background-color: {{data.secundaryColor }};
         }
     </style>
 </header>
 <section>
         <div class="firstImpression">
-            <p>{{pageTitle}}</p>
+            <p>{{data.pageTitle}}</p>
         </div>
         <div class="aboutUs">
             <div class="dot"><i class="fas fa-phone"></i></div>
             <div class="dot"><i class="far fa-thumbs-up"></i></div>
             <div class="dot"><i class="fas fa-code-branch"></i></div>
             <p>
-               {{bodyText}}
+               {{data.bodyText}}
             </p>
             <div >
-                <button class="button primaryColor" ng-show="callMe" href="">
+                <button class="button primaryColor" ng-show="data.callMe" href="">
                     <div ng-hide="leftJustify">
-                        {{callMePhrase}}
+                        {{data.callMePhrase}}
                     </div>
                     <div class="toLeft" ng-hide="!leftJustify">
                         <i class="fas fa-phone" ng-hide="!showIcons"></i>
-                        {{callMePhrase}}
+                        {{data.callMePhrase}}
                     </div>
                 </button>
-                <button class="button secundaryColor" ng-show="call" href="">
+                <button class="button secundaryColor" ng-show="data.call" href="">
                     <div ng-hide="leftJustify">
-                        {{callPhrase}}
+                        {{data.callPhrase}}
                     </div>
                     <div class="toLeft" ng-hide="!leftJustify">
                         <i class="fas fa-phone" ng-hide="!showIcons"></i>
-                        {{callPhrase}}
+                        {{data.callPhrase}}
                     </div>
                 </button>
-                <button class="button secundaryColor" ng-show="callMeLater" href="">
+                <button class="button secundaryColor" ng-show="data.callMeLater" href="">
                     <div ng-hide="leftJustify">
-                        {{callMeLaterPhrase}}
+                        {{data.callMeLaterPhrase}}
                     </div>
                     <div class="toLeft" ng-hide="!leftJustify">
                         <i class="far fa-calendar" ng-hide="!showIcons"></i>
-                        {{callMeLaterPhrase}}
+                        {{data.callMeLaterPhrase}}
                     </div>
                 </button>
-                <button class="button secundaryColor" ng-show="email" href="">
+                <button class="button secundaryColor" ng-show="data.email" href="">
                     <div ng-hide="leftJustify">
-                        {{emailPhrase}}
+                        {{data.emailPhrase}}
                     </div>
                     <div class=primaryColor"toLeft" ng-hide="!leftJustify">
                         <i class="fas fa-at" ng-hide="!showIcons"></i>
-                        {{emailPhrase}}
+                        {{data.emailPhrase}}
                     </div>
                 </button>
-                <button class="button secundaryColor" ng-show="whatsapp" href="">
+                <button class="button secundaryColor" ng-show="data.whatsapp" href="">
                     <div ng-hide="leftJustify">
-                        {{whatsappPhrase}}
+                        {{data.whatsappPhrase}}
                     </div>
                     <div class="toLeft" ng-hide="!leftJustify">
                         <i class="fab fa-whatsapp" ng-hide="!showIcons"></i>
-                        {{whatsappPhrase}}
+                        {{data.whatsappPhrase}}
                     </div>
                 </button>
             </div>
@@ -82,9 +82,9 @@
 </section>
 <div class="pre primaryColor"></div>
 <footer class="secundaryColor">
-    <a href="http://{{footerLink}}" target="blank">
-    <img src="{{footerImg}}" />
-        <p>{{footerLink}}</p>
+    <a href="http://{{data.footerLink}}" target="blank">
+    <img src="{{data.footerImg}}" />
+        <p>{{data.footerLink}}</p>
     </a>
 </footer>
 </nav>
