@@ -33,48 +33,57 @@
             </p>
             <div >
                 <button class="button primaryColor" ng-show="data.callMe" href="">
-                    <div ng-hide="leftJustify">
+                    <div ng-hide="data.leftJustify">
                         {{data.callMePhrase}}
                     </div>
-                    <div class="toLeft" ng-hide="!leftJustify">
-                        <i class="fas fa-phone" ng-hide="!showIcons"></i>
+                    <div class="toLeft" ng-hide="!data.leftJustify">
+                        <i class="fas fa-phone" ng-hide="!data.showIcons"></i>
                         {{data.callMePhrase}}
                     </div>
                 </button>
                 <button class="button secundaryColor" ng-show="data.call" href="">
-                    <div ng-hide="leftJustify">
+                    <div ng-hide="data.leftJustify">
                         {{data.callPhrase}}
                     </div>
-                    <div class="toLeft" ng-hide="!leftJustify">
-                        <i class="fas fa-phone" ng-hide="!showIcons"></i>
+                    <div class="toLeft" ng-hide="!data.leftJustify">
+                        <i class="fas fa-phone" ng-hide="!data.showIcons"></i>
                         {{data.callPhrase}}
                     </div>
                 </button>
                 <button class="button secundaryColor" ng-show="data.callMeLater" href="">
-                    <div ng-hide="leftJustify">
+                    <div ng-hide="data.leftJustify">
                         {{data.callMeLaterPhrase}}
                     </div>
-                    <div class="toLeft" ng-hide="!leftJustify">
-                        <i class="far fa-calendar" ng-hide="!showIcons"></i>
+                    <div class="toLeft" ng-hide="!data.leftJustify">
+                        <i class="far fa-calendar" ng-hide="!data.showIcons"></i>
                         {{data.callMeLaterPhrase}}
                     </div>
                 </button>
                 <button class="button secundaryColor" ng-show="data.email" href="">
-                    <div ng-hide="leftJustify">
+                    <div ng-hide="data.leftJustify">
                         {{data.emailPhrase}}
                     </div>
-                    <div class=primaryColor"toLeft" ng-hide="!leftJustify">
-                        <i class="fas fa-at" ng-hide="!showIcons"></i>
+                    <div class="toLeft" ng-hide="!data.leftJustify">
+                        <i class="fas fa-at" ng-hide="!data.showIcons"></i>
                         {{data.emailPhrase}}
                     </div>
                 </button>
                 <button class="button secundaryColor" ng-show="data.whatsapp" href="">
-                    <div ng-hide="leftJustify">
+                    <div ng-hide="data.leftJustify">
                         {{data.whatsappPhrase}}
                     </div>
-                    <div class="toLeft" ng-hide="!leftJustify">
-                        <i class="fab fa-whatsapp" ng-hide="!showIcons"></i>
+                    <div class="toLeft" ng-hide="!data.leftJustify">
+                        <i class="fab fa-whatsapp" ng-hide="!data.showIcons"></i>
                         {{data.whatsappPhrase}}
+                    </div>
+                </button>
+                <button class="button secundaryColor" ng-show="data.whatsapp" href="">
+                    <div ng-hide="data.leftJustify">
+                        {{data.chatPhrase}}
+                    </div>
+                    <div class="toLeft" ng-hide="!data.leftJustify">
+                        <i class="fas fa-comments" ng-hide="!data.showIcons"></i>
+                        {{data.chatPhrase}}
                     </div>
                 </button>
             </div>

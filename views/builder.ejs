@@ -31,11 +31,13 @@
             $scope.data.callMeLater = true;
             $scope.data.call = true;
             $scope.data.email = true;
+            $scope.data.chat = true;
             $scope.data.whatsapp = true;
             $scope.data.callMePhrase = 'Ligue-me';
             $scope.data.callMeLaterPhrase = 'Ligue-me mais tarde';
             $scope.data.callPhrase = 'Ligar';
             $scope.data.emailPhrase = 'Envie um email';
+            $scope.data.chatPhrase = 'Entre em contato por chat';
             $scope.data.whatsappPhrase = 'Mande uma mensagem via whatsapp';
             $scope.data.leftJustify = false;
             $scope.data.showIcons = false;
@@ -129,7 +131,7 @@
                     </label>
                     <br>
                     <label>
-                        <input type="checkbox" ng-model="data.showIcons" ng-disabled="!leftJustify"> ativar logos
+                        <input type="checkbox" ng-model="data.showIcons" ng-disabled="!data.leftJustify"> ativar logos
                     </label>
                 </div>
                 <div class="form-group col-md-12">
@@ -167,6 +169,13 @@
                     </label>
                     <input type="text" name="whatsappPhrase" ng-model="data.whatsappPhrase" class="form-control" />
                     <input type="text" name="whatsappValue" ng-model="data.whatsappValue" class="form-control" placeholder="Digite o numero aqui" />
+                </div>
+                <div class="form-group col-md-12">
+                    <label>
+                        <input ng-model="data.chat" type="checkbox" checked="true" id="exampleCheck1"> chat
+                    </label>
+                    <input type="text" name="chatPhrase" ng-model="data.chatPhrase" class="form-control" />
+                    <input type="text" name="chatValue" ng-model="data.chatValue" class="form-control" placeholder="Digite a url de chat aqui"/>
                 </div>
             </div>
         </div>
