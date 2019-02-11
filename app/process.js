@@ -1,3 +1,5 @@
+const mysqlAcess = require(__dirname + '/mysqlAcess');
+
 
 const router = {
     createObject: (data) => {
@@ -259,6 +261,14 @@ const router = {
                     }
                 ]
             }
+            mysqlAcess.templates({name: data.name, slug: data.templateModel, steps: JSON.stringify(stepsObject)})
+            .then(result => {
+                return resolve(true);
+            })
+            .catch(err => {
+                return reject(err);
+            });
+
         });
     }
 }
