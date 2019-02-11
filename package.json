@@ -2,7 +2,7 @@
   "name": "triplice",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "triplice.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,7 @@
     "express": "^4.16.3"
   },
   "dependencies": {
-    "ejs": "^2.6.1"
+    "ejs": "^2.6.1",
+    "mysql": "^2.16.0"
   }
 }
