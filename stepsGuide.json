@@ -1,0 +1,467 @@
+{
+    "steps": [
+        {
+            "name": "Validação CPF",
+            "images": [],
+            "lineActions": [],
+            "content": [
+                {
+                    "value": "Olá @Nome",
+                    "name": "Título",
+                    "type": "text",
+                    "extra": {
+                        "customFields": [
+                            "Nome"
+                        ]
+                    }
+                },
+                {
+                    "value": "temos uma ótima oportunidade para você!",
+                    "name": "Subtítulo",
+                    "type": "text"
+                }
+            ],
+            "actions": [
+                {
+                    "name": "call",
+                    "icon": "ion-android-call",
+                    "click": "call",
+                    "options": [],
+                    "value": true,
+                    "input": true,
+                    "inputValue": "",
+                    "labelValue": "Numero Ligar",
+                    "label": "Você me liga"
+                },
+                {
+                    "name": "redirectToEmail",
+                    "icon": "ion-email",
+                    "click": "redirectToEmail",
+                    "options": [],
+                    "value": true,
+                    "input": true,
+                    "inputValue": "",
+                    "labelValue": "Mandar um E-mail",
+                    "label": "E-mail"
+                },
+                {
+                    "name": "callMe",
+                    "icon": "ion-android-call",
+                    "click": "callMe",
+                    "span": "(grátis)",
+                    "value": false,
+                    "input": false,
+                    "inputValue": "",
+                    "labelValue": "Numero Ligue-me",
+                    "label": "Eu te ligo agora",
+                    "inputClass": "number"
+                },
+                {
+                    "name": "callMeLater",
+                    "icon": "ion-android-call",
+                    "click": "callMeLater",
+                    "span": "(grátis)",
+                    "options": [],
+                    "value": false,
+                    "input": false,
+                    "labelValue": "Ligue-me mais tarde",
+                    "label": "Eu te ligo mais tarde",
+                    "inputClass": "number"
+                },
+                {
+                    "name": "whatsappContact",
+                    "icon": "ion-social-whatsapp-outline",
+                    "click": "whatsapp",
+                    "options": [],
+                    "value": true,
+                    "input": true,
+                    "inputValue": "",
+                    "labelValue": "Numero WhatsApp",
+                    "label": "Fale conosco pelo WhatsApp"
+                },
+                {
+                    "name": "chat",
+                    "icon": "ion-chatbubbles",
+                    "click": "chat",
+                    "options": [],
+                    "value": false,
+                    "input": false,
+                    "inputValue": "",
+                    "labelValue": "Url Chat",
+                    "label": "Chat"
+                }
+            ]
+        },
+        {
+            "name": "Negociação",
+            "images": [
+                {
+                    "value": "https://s3-sa-east-1.amazonaws.com/pointer-media/rbrasil-pernambucanas-logo.png",
+                    "size": "600x100",
+                    "name": "image2"
+                }
+            ],
+            "content": [
+                {
+                    "value": "Muito Obrigado @Nome",
+                    "name": "Título",
+                    "type": "text",
+                    "extra": {
+                        "customFields": [
+                            "Nome"
+                        ]
+                    }
+                },
+                {
+                    "value": "Pensando em você fizemos uma proposta única!",
+                    "type": "textarea",
+                    "extra": {
+                        "customFields": [
+                            "Valoratualizado",
+                            "Titulos"
+                        ]
+                    }
+                }
+            ],
+            "actions": [
+                {
+                    "name": "call",
+                    "icon": "ion-android-call",
+                    "click": "call",
+                    "options": [],
+                    "value": false,
+                    "input": false,
+                    "inputValue": "",
+                    "labelValue": "Numero Ligar",
+                    "label": "Você me liga",
+                    "inputClass": "number"
+                },
+                {
+                    "name": "redirectToEmail",
+                    "icon": "ion-email",
+                    "click": "redirectToEmail",
+                    "options": [],
+                    "value": true,
+                    "input": true,
+                    "inputValue": "negociacao.digital@localcred.com.br",
+                    "labelValue": "Mandar um E-mail",
+                    "label": "E-mail"
+                },
+                {
+                    "name": "callMe",
+                    "icon": "ion-android-call",
+                    "click": "callMe",
+                    "span": "(grátis)",
+                    "value": true,
+                    "input": true,
+                    "inputValue": "08007255827",
+                    "labelValue": "Numero Ligue-me",
+                    "label": "Eu te ligo agora",
+                    "inputClass": "number"
+                },
+                {
+                    "name": "callMeLater",
+                    "icon": "ion-android-call",
+                    "click": "callMeLater",
+                    "span": "(grátis)",
+                    "options": [],
+                    "value": false,
+                    "input": false,
+                    "labelValue": "Ligue-me mais tarde",
+                    "label": "Eu te ligo mais tarde",
+                    "inputClass": "number"
+                },
+                {
+                    "name": "whatsappContact",
+                    "icon": "ion-social-whatsapp-outline",
+                    "click": "whatsapp",
+                    "options": [],
+                    "value": true,
+                    "input": true,
+                    "inputValue": "11963218449",
+                    "labelValue": "Numero WhatsApp",
+                    "label": "Fale conosco pelo WhatsApp",
+                    "inputClass": "number"
+                },
+                {
+                    "name": "chat",
+                    "icon": "ion-chatbubbles",
+                    "click": "chat",
+                    "options": [],
+                    "value": true,
+                    "input": true,
+                    "inputValue": "https://goo.gl/auFN7a",
+                    "labelValue": "Url Chat",
+                    "label": "Chat"
+                }
+            ]
+        },
+        {
+            "name": "Acordo",
+            "images": [],
+            "lineActions": [
+                {
+                    "name": "copy",
+                    "icon": "ion-ios-copy-outline",
+                    "options": [],
+                    "value": true,
+                    "input": false,
+                    "label": "Copiar área transferência"
+                },
+                {
+                    "name": "sms",
+                    "icon": "ion-ios-chatbubble-outline",
+                    "options": [],
+                    "value": true,
+                    "input": false,
+                    "label": "Receber por SMS"
+                },
+                {
+                    "name": "pdf",
+                    "icon": "ion-ios-download-outline",
+                    "options": [],
+                    "value": true,
+                    "input": false,
+                    "label": "Download PDF"
+                },
+                {
+                    "name": "email",
+                    "icon": "ion-ios-at-outline",
+                    "options": [],
+                    "value": true,
+                    "input": true,
+                    "inputValue": "negociacao.digital@localcred.com.br",
+                    "labelValue": "Email para respostas",
+                    "label": "Receber por e-mail"
+                }
+            ],
+            "content": [
+                {
+                    "value": "Obrigado @Nome",
+                    "name": "Título",
+                    "type": "text",
+                    "extra": {
+                        "customFields": [
+                            "Nome"
+                        ]
+                    }
+                },
+                {
+                    "value": "Validando a sua opção:",
+                    "name": "Título",
+                    "type": "text",
+                    "extra": {
+                        "customFields": [
+                            "Nome"
+                        ]
+                    }
+                }
+            ],
+            "actions": [
+                {
+                    "name": "call",
+                    "icon": "ion-android-call",
+                    "click": "call",
+                    "options": [],
+                    "value": true,
+                    "input": true,
+                    "inputValue": "",
+                    "labelValue": "Numero Ligar",
+                    "label": "Você me liga"
+                },
+                {
+                    "name": "redirectToEmail",
+                    "icon": "ion-email",
+                    "click": "redirectToEmail",
+                    "options": [],
+                    "value": true,
+                    "input": true,
+                    "inputValue": "",
+                    "labelValue": "Mandar um E-mail",
+                    "label": "E-mail"
+                },
+                {
+                    "name": "callMe",
+                    "icon": "ion-android-call",
+                    "click": "callMe",
+                    "span": "(grátis)",
+                    "value": false,
+                    "input": false,
+                    "inputValue": "",
+                    "labelValue": "Numero Ligue-me",
+                    "label": "Eu te ligo agora",
+                    "inputClass": "number"
+                },
+                {
+                    "name": "callMeLater",
+                    "icon": "ion-android-call",
+                    "click": "callMeLater",
+                    "span": "(grátis)",
+                    "options": [],
+                    "value": false,
+                    "input": false,
+                    "labelValue": "Ligue-me mais tarde",
+                    "label": "Eu te ligo mais tarde",
+                    "inputClass": "number"
+                },
+                {
+                    "name": "whatsappContact",
+                    "icon": "ion-social-whatsapp-outline",
+                    "click": "whatsapp",
+                    "options": [],
+                    "value": true,
+                    "input": true,
+                    "inputValue": "",
+                    "labelValue": "Numero WhatsApp",
+                    "label": "Fale conosco pelo WhatsApp"
+                },
+                {
+                    "name": "chat",
+                    "icon": "ion-chatbubbles",
+                    "click": "chat",
+                    "options": [],
+                    "value": false,
+                    "input": false,
+                    "inputValue": "",
+                    "labelValue": "Url Chat",
+                    "label": "Chat"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "call",
+            "icon": "ion-android-call",
+            "click": "call",
+            "options": [],
+            "value": false,
+            "input": false,
+            "inputValue": "",
+            "labelValue": "Numero Ligar",
+            "label": "Você me liga",
+            "inputClass": "number"
+        },
+        {
+            "name": "redirectToEmail",
+            "icon": "ion-email",
+            "click": "redirectToEmail",
+            "options": [],
+            "value": true,
+            "input": true,
+            "inputValue": "negociacao.digital@localcred.com.br",
+            "labelValue": "Mandar um E-mail",
+            "label": "E-mail"
+        },
+        {
+            "name": "callMe",
+            "icon": "ion-android-call",
+            "click": "callMe",
+            "span": "(grátis)",
+            "value": true,
+            "input": true,
+            "inputValue": "08007255827",
+            "labelValue": "Numero Ligue-me",
+            "label": "Eu te ligo agora",
+            "inputClass": "number"
+        },
+        {
+            "name": "callMeLater",
+            "icon": "ion-android-call",
+            "click": "callMeLater",
+            "span": "(grátis)",
+            "options": [],
+            "value": false,
+            "input": false,
+            "labelValue": "Ligue-me mais tarde",
+            "label": "Eu te ligo mais tarde",
+            "inputClass": "number"
+        },
+        {
+            "name": "whatsappContact",
+            "icon": "ion-social-whatsapp-outline",
+            "click": "whatsapp",
+            "options": [],
+            "value": true,
+            "input": true,
+            "inputValue": "11963218449",
+            "labelValue": "Numero WhatsApp",
+            "label": "Fale conosco pelo WhatsApp",
+            "inputClass": "number"
+        },
+        {
+            "name": "chat",
+            "icon": "ion-chatbubbles",
+            "click": "chat",
+            "options": [],
+            "value": true,
+            "input": true,
+            "inputValue": "https://goo.gl/auFN7a",
+            "labelValue": "Url Chat",
+            "label": "Chat"
+        }
+    ],
+    "actionsOptions": [
+        {
+            "name": "weekCommercialWorkTime",
+            "input": true,
+            "value": true,
+            "type": "time",
+            "between": true,
+            "labelValue": "Horario de atendimento em dias uteis",
+            "label": "Horario de atendimento em dias uteis",
+            "fields": [
+                {
+                    "name": "weekCommercialStartTime",
+                    "inputValue": "08:00"
+                },
+                {
+                    "name": "weekCommercialEndTime",
+                    "inputValue": "20:30"
+                }
+            ],
+            "inputClass": "hour"
+        },
+        {
+            "name": "saturdayCommercialWorkTime",
+            "input": true,
+            "value": true,
+            "type": "time",
+            "between": "1",
+            "labelValue": "Horario de atendimento aos Sabados",
+            "label": "Horario de atendimento aos Sabados",
+            "fields": [
+                {
+                    "name": "saturdayCommercialStartTime",
+                    "inputValue": "08:00"
+                },
+                {
+                    "name": "saturdayCommercialEndTime",
+                    "inputValue": "14:00"
+                }
+            ],
+            "inputClass": "hour"
+        },
+        {
+            "name": "callmeLaterLimit",
+            "input": true,
+            "value": true,
+            "type": "text",
+            "between": false,
+            "fields": [
+                {
+                    "name": "callmeLaterLimit",
+                    "inputValue": "3",
+                    "value": "3"
+                }
+            ],
+            "labelValue": "Dias para Ligue-me mais tarde",
+            "label": "Dias para Ligue-me mais tarde",
+            "inputClass": "daysCallmeLater"
+        },
+        {
+            "externalData": true,
+            "dataSource": "wsPernambucanas"
+        }
+    ]
+}
