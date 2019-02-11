@@ -45,8 +45,8 @@
             $scope.data.backgroundColor = "#ffffff";
             $scope.data.primaryColor = "#337ab7"; 
             $scope.data.secundaryColor = '#444444';
+            $scope.data.slug = '<%= templateModel %>';
 
-            console.log($scope.data);
             $scope.buildJson = () => {
                 $http({
                     method: 'POST',
@@ -61,12 +61,13 @@
             };
 
         });
-    </script>
+        </script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 
 <body ng-controller="builderController">
+    <%= templateModel %>
     <form role="form" id="formEntry" name="formEntry" method="post" onsubmit="" action="">
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
