@@ -44,6 +44,13 @@ const router = {
                                 }
                             }
                         ],
+                        "actionsStyles": {
+                            "leftJustify": data.leftJustify,
+                            "showIcons": data.showIcons,
+                            "primaryColor": data.primaryColor,
+                            "secundaryColor": data.secundaryColor,
+                            "backgroundColor": data.backgroundColor,
+                        },
                         "actions": [
                             {
                                 "name": "call",
@@ -124,7 +131,7 @@ const router = {
                         "options": [],
                         "value": data.call,
                         "input": data.call,
-                        "inputValue": "",
+                        "inputValue": data.callValue,
                         "labelValue": data.callPhrase,
                         "label": data.callPhrase,
                         "inputClass": "number"
@@ -136,7 +143,7 @@ const router = {
                         "options": [],
                         "value": data.email,
                         "input": data.email,
-                        "inputValue": "",
+                        "inputValue": data.emailValue,
                         "labelValue": data.emailPhrase,
                         "label": data.emailPhrase
                     },
@@ -147,7 +154,7 @@ const router = {
                         "span": "(grátis)",
                         "value": data.callMe,
                         "input": data.callMe,
-                        "inputValue": "08007255827",
+                        "inputValue": data.callMeValue,
                         "labelValue": data.callMePhrase,
                         "label": data.callMePhrase,
                         "inputClass": "number"
@@ -171,7 +178,7 @@ const router = {
                         "options": [],
                         "value": data.whatsapp,
                         "input": data.whatsapp,
-                        "inputValue": "",
+                        "inputValue": data.whatsappValue,
                         "labelValue": data.whatsappPhrase,
                         "label": data.whatsappPhrase,
                         "inputClass": "number"
@@ -181,11 +188,11 @@ const router = {
                         "icon": "ion-chatbubbles",
                         "click": "chat",
                         "options": [],
-                        "value": true,
-                        "input": true,
-                        "inputValue": "",
-                        "labelValue": "Url Chat",
-                        "label": "Chat"
+                        "value": data.chat,
+                        "input": data.chat,
+                        "inputValue": data.chatValue,
+                        "labelValue": data.chatPhrase,
+                        "label": data.chatPhrase
                     }
                 ],
                 "actionsOptions": [
@@ -204,7 +211,7 @@ const router = {
                             },
                             {
                                 "name": "weekCommercialEndTime",
-                                "inputValue": "20:30"
+                                "inputValue": "18:00"
                             }
                         ],
                         "inputClass": "hour"
@@ -252,13 +259,6 @@ const router = {
                     }
                 ]
             }
-
-            // data.leftJustify = false;
-            // data.showIcons = false;
-            // data.secundaryColor = "#dddddd";
-            // data.colorPicker = "#ffffff";
-            // data.primaryColor = "#337ab7"; 
-            // data.secundaryColor = '#444444';
         });
     }
 }
