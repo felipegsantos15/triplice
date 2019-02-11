@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/template/:value', function (req, res) {
-    res.render('builder');
+    res.render('builder', {templateModel: req.params.value });
 });
 
 app.post('/process', function (req, res) {
