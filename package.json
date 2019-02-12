@@ -1,6 +1,6 @@
 {
   "name": "triplice",
-  "version": "1.0.0",
+  "version": "0.3.0",
   "description": "",
   "main": "triplice.js",
   "scripts": {
@@ -12,7 +12,9 @@
     "express": "^4.16.3"
   },
   "dependencies": {
+    "dotenv": "^6.2.0",
     "ejs": "^2.6.1",
-    "mysql": "^2.16.0"
+    "mysql": "^2.16.0",
+    "npm": "^6.7.0"
   }
 }
