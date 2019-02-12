@@ -261,7 +261,7 @@ const router = {
                     }
                 ]
             }
-            mysqlAcess.templates({name: data.name, slug: data.templateModel, steps: JSON.stringify(stepsObject)})
+            mysqlAcess.templates({name: data.templateName, slug: data.slug, steps: JSON.stringify(stepsObject)})
             .then(result => {
                 return resolve(true);
             })
