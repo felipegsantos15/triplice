@@ -11,16 +11,16 @@ app.get('/', function (req, res) {
 });
 
 app.get('/template/:value', function (req, res) {
-    res.render('builder', {templateModel: req.params.value });
+    res.render('builder', {templateModel: req.params.value, templateRouter: `partials/${req.params.value}.ejs` });
 });
 
 app.post('/process', function (req, res) {
     runner.createObject(req.query)
     .then(result => {
-        res.send(200, 'ok');
+        res.status(200).send('ok');
     })
     .catch(err => {
-        res.send(500, err);
+        res.status(500).send(err);
     })
 });
 

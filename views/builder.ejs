@@ -46,6 +46,11 @@
             $scope.data.primaryColor = "#337ab7"; 
             $scope.data.secundaryColor = '#444444';
             $scope.data.slug = '<%= templateModel %>';
+            $scope.data.callValue = '';
+            $scope.data.callMeValue = '';
+            $scope.data.chatValue = '';
+            $scope.data.whatsappValue = '';
+            $scope.data.sendEmailValue = '';
 
             $scope.buildJson = () => {
                 $http({
@@ -65,10 +70,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-
 <body ng-controller="builderController">
-    <%= templateModel %>
+    <img style="width:200px;float: left;" src="http://localhost:3000/images/beta.png" alt="beta">
     <form role="form" id="formEntry" name="formEntry" method="post" onsubmit="" action="">
+        <div class="form-group col-md-12">
+            <label for="">
+                Nome da Landing Page
+                <input type="text" class="form-control" ng-model="data.templateName" required>
+            </label>
+        </div>
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
@@ -186,7 +196,7 @@
         </div>
     </form>
     <div class="templateModel">
-        <% include partials/template1.ejs %>
+        <%- include(templateRouter) %>
     </div>
 </body>
 
