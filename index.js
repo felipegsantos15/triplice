@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/template/:value', function (req, res) {
-    res.render('builder', {templateModel: req.params.value });
+    res.render('builder', {templateModel: req.params.value, templateRouter: `partials/${req.params.value}.ejs` });
 });
 
 app.post('/process', function (req, res) {
