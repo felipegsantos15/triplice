@@ -1,0 +1,8 @@
+Botoẽs:
+- Auto-negociação
+
+Utilidades:
+- Geolocalização
+
+extra:
+-Horários do ligue-me
