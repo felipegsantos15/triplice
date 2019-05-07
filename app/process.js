@@ -1,4 +1,4 @@
-const mysqlAcess = require(__dirname + '/mysqlAcess');
+const mysqlAcess = require('./mysql/mysqlAcess');
 
 
 const router = {

@@ -1,11 +1,12 @@
-var mysql = require('mysql');
-var connection = mysql.createConnection({
-  host     : process.env.HOST,
-  user     : process.env.USER,
-  password : process.env.PASSWORD,
-  database : process.env.DATABASE
+const knex = require('knex')({
+  client: 'mysql',
+  connection: {
+    host : '127.0.0.1',
+    user : 'root',
+    password : 'q1w2e3',
+    database : 'pontal_admin'
+  }
 });
-connection.connect();
 
 mysqlAcess = {
 	insertTemplate: (template) => {
