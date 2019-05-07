@@ -1,16 +1,16 @@
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : 'q1w2e3',
-  database : 'pontal_admin'
+  host     : process.env.HOST,
+  user     : process.env.USER,
+  password : process.env.PASSWORD,
+  database : process.env.DATABASE
 });
 connection.connect();
 
 mysqlAcess = {
 	insertTemplate: (template) => {
 		return new Promise ((resolve, reject) => {
-			connection.query(`INSERT INTO interactive_link_template SET ?`, template, function (error, results, fields) {
+			connection.query(`INSERT INTO ${process.env.TABLE_NAME} SET ?`, template, function (error, results, fields) {
 			  if (error) {
 				  connection.end();
 				  return reject(error);
