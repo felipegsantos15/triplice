@@ -2,9 +2,20 @@ const mysqlAcess = require('./mysql/mysqlAcess');
 
 
 const router = {
-    createObject: (data) => {
-        return new Promise((resolve, reject) => {
-            let stepsObject = {
+    createObject: async (data) => {
+        try {
+            let stepsObject = await router.populateObject(data);
+            let templateSlug = `builderTemplate${data.slug}`;
+            let templateFunnel = `hotsite-builder-template-${data.slug}`;
+            return await mysqlAcess.insertTemplate({name: data.templateName, slug: templateSlug, funnel: templateFunnel, steps: JSON.stringify(stepsObject)})
+        } catch (err) {
+            console.log(err);
+            throw err.message;
+        }
+    },
+    populateObject: async (data) => {
+        try {
+            return {
                 "steps": [
                     {
                         "name": "Landing Page",
@@ -261,16 +272,10 @@ const router = {
                     }
                 ]
             }
-            mysqlAcess.insertTemplate({name: data.templateName, slug: data.slug, steps: JSON.stringify(stepsObject)})
-            .then(result => {
-                return resolve(true);
-            })
-            .catch(err => {
-                console.log(err);
-                return reject(err);
-            });
 
-        });
+        } catch (e) {
+            throw e.message;
+        }
     }
 }
 

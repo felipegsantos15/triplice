@@ -57,7 +57,8 @@
                 .then(sucess => {
                     alert('objeto inserido com sucesso no banco de dados');
                 }, err => {
-                    alert('houve um erro ao tentar processar', err);
+                    console.log(err.data)
+                    alert(`Erro: ${err.data}`);
                 });
             };
 

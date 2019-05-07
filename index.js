@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const runner = require(__dirname + '/app/process');
+require('dotenv').config();
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
@@ -11,7 +12,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/template/:value', function (req, res) {
-    res.render('builder');
+    res.render('builder', {templateModel: req.params.value, templateRouter: `partials/${req.params.value}.ejs` });
 });
 
 app.post('/process', function (req, res) {
