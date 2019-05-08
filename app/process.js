@@ -7,7 +7,14 @@ const router = {
             let stepsObject = await router.populateObject(data);
             let templateSlug = `builderTemplate${data.slug}`;
             let templateFunnel = `hotsite-builder-template-${data.slug}`;
-            return await mysqlAcess.insertTemplate({name: data.templateName, slug: templateSlug, funnel: templateFunnel, steps: JSON.stringify(stepsObject)})
+            let obj = {
+                name: data.templateName,
+                slug: templateSlug,
+                funnel: templateFunnel,
+                steps: JSON.stringify(stepsObject),
+                client_id: data.clientId
+            }
+            return await mysqlAcess.insertTemplate(obj);
         } catch (err) {
             console.log(err);
             throw err.message;
