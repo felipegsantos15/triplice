@@ -66,135 +66,136 @@
         });
         </script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
 </head>
 <body ng-controller="builderController">
     <img style="width:200px;float: left;position: absolute;z-index:1;opacity: .2;" src="http://localhost:3000/images/beta.png" alt="beta">
-    <form role="form" id="formEntry" name="formEntry" method="post" onsubmit="" action="">
-        <div class="form-group col-md-12">
-            <label for="">
-                Nome da Landing Page
-                <input type="text" class="form-control" ng-model="data.templateName" required>
-            </label>
-        </div>
-        <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
-                    aria-selected="true">estilos</a>
-                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
-                    aria-selected="false">textos</a>
-                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
-                    aria-selected="false">botoes</a>
+    <div class="container-fluid col-md-8">
+        <form role="form" id="formEntry" name="formEntry" method="post" onsubmit="" action="">
+            <div class="form-group col-md-12">
+                <label for="">
+                    Nome da Landing Page
+                    <input type="text" class="form-control" ng-model="data.templateName" required>
+                </label>
             </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <br>
-                Imagens
-                <div class="form-group col-md-12">
-                    <label for="logoName">Link da imagem</label>
-                    <input type="text" ng-model="data.logoImg" class="form-control">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+                        aria-selected="true">estilos</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
+                        aria-selected="false">textos</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
+                        aria-selected="false">botoes</a>
                 </div>
-                <div class="form-group col-md-12">
-                    <label for="logoBackgroud">Imagem de fundo</label>
-                    <input type="text" ng-model="data.backgroundImg" class="form-control">
-                </div>
-                <div class="form-group col-md-12">
-                    <label for="zip">logo do rodapé</label>
-                    <input type="text" name="zip" id="zip" ng-model="data.footerImg" class="form-control" value="" />
-                </div>
-                cores
-                <div class="form-group col-md-12">
-                    <label for="logoName">cor de fundo</label>
-                    <input type="color" name="favcolor" ng-model="data.backgroundColor"> <br>
-                </div>
-                <div class="form-group col-md-12">
-                    <label for="logoBackgroud">cor primaria</label>
-                    <input type="color" name="favcolor" ng-model="data.primaryColor"> <br>
-                </div>
-                <div class="form-group col-md-12">
-                    <label for="zip">cor secundaria</label>
-                    <input type="color" ng-model="data.secundaryColor" name="favcolor" >
-                </div>
-            </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                <br>
-                <div class="form-group col-md-12">
-                    <label for="fname">Frase da pagina</label>
-                    <input type="text" name="firstName" ng-model="data.pageTitle" id="fname" class="form-control" value="" />
-                </div>
-                <div class="form-group col-md-12">
-                    <label for="lname">Texto</label>
-                    <input type="textArea" name="lastName" ng-model="data.bodyText" id="lname" class="form-control" value="" />
-                </div>
-                <div class="form-group col-md-12">
-                    <label for="zip">Link do rodapé</label>
-                    <input type="text" name="zip" id="zip" ng-model="data.footerLink" class="form-control" value="" />
-                </div>
-            </div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                <div class="form-group col-md-12">
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                     <br>
-                    <label>
-                        <input type="checkbox" ng-model="data.leftJustify"> texto a esquerda
-                    </label>
+                    Imagens
+                    <div class="form-group col-md-12">
+                        <label for="logoName">Link da imagem</label>
+                        <input type="text" ng-model="data.logoImg" class="form-control">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="logoBackgroud">Imagem de fundo</label>
+                        <input type="text" ng-model="data.backgroundImg" class="form-control">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="zip">logo do rodapé</label>
+                        <input type="text" name="zip" id="zip" ng-model="data.footerImg" class="form-control" value="" />
+                    </div>
+                    cores
+                    <div class="form-group col-md-12">
+                        <label for="logoName">cor de fundo</label>
+                        <input type="color" name="favcolor" ng-model="data.backgroundColor"> <br>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="logoBackgroud">cor primaria</label>
+                        <input type="color" name="favcolor" ng-model="data.primaryColor"> <br>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="zip">cor secundaria</label>
+                        <input type="color" ng-model="data.secundaryColor" name="favcolor" >
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                     <br>
-                    <label>
-                        <input type="checkbox" ng-model="data.showIcons" ng-disabled="!data.leftJustify"> ativar logos
-                    </label>
+                    <div class="form-group col-md-12">
+                        <label for="fname">Frase da pagina</label>
+                        <input type="text" name="firstName" ng-model="data.pageTitle" id="fname" class="form-control" value="" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="lname">Texto</label>
+                        <input type="textArea" name="lastName" ng-model="data.bodyText" id="lname" class="form-control" value="" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="zip">Link do rodapé</label>
+                        <input type="text" name="zip" id="zip" ng-model="data.footerLink" class="form-control" value="" />
+                    </div>
                 </div>
-                <div class="form-group col-md-12">
-                    <label>
-                        <input ng-model="data.callMe" type="checkbox" checked="true" id="exampleCheck1"> Call Me
-                    </label>
-                    <br>
-                    <input type="text" name="callMePhrase" ng-model="data.callMePhrase" class="form-control" />
-                    <input type="text" name="callMeValue" ng-model="data.callMeValue" class="form-control" placeholder="Digite o numero aqui"/>
-                </div>
-                <div class="form-group col-md-12">
-                    <label>
-                        <input ng-model="data.callMeLater" type="checkbox" checked="true" id="exampleCheck1"> Call Me Later
-                    </label>
-                    <input type="text" name="callMeLaterPhrase" ng-model="data.callMeLaterPhrase" class="form-control" />
-                </div>
-                <div class="form-group col-md-12">
-                    <label>
-                        <input ng-model="data.call" type="checkbox" checked="true" id="exampleCheck1"> Call
-                    </label>
-                    <input type="text" name="callPhrase" ng-model="data.callPhrase" class="form-control" />
-                    <input type="text" name="callValue" ng-model="data.callValue" class="form-control" placeholder="Digite o numero aqui" />
-                </div>
-                <div class="form-group col-md-12">
-
-                    <label>
-                        <input ng-model="data.email" type="checkbox" checked="true" id="exampleCheck1"> Enviar E-mail
-                    </label>
-                    <input type="text" name="sendEmailPhrase" ng-model="data.emailPhrase" class="form-control" />
-                    <input type="text" name="sendEmailValue" ng-model="data.emailValue" class="form-control" placeholder="Digite o email aqui" />
-                </div>
-                <div class="form-group col-md-12">
-                    <label>
-                        <input ng-model="data.whatsapp" type="checkbox" checked="true" id="exampleCheck1"> Whatsapp
-                    </label>
-                    <input type="text" name="whatsappPhrase" ng-model="data.whatsappPhrase" class="form-control" />
-                    <input type="text" name="whatsappValue" ng-model="data.whatsappValue" class="form-control" placeholder="Digite o numero aqui" />
-                </div>
-                <div class="form-group col-md-12">
-                    <label>
-                        <input ng-model="data.chat" type="checkbox" checked="true" id="exampleCheck1"> chat
-                    </label>
-                    <input type="text" name="chatPhrase" ng-model="data.chatPhrase" class="form-control" />
-                    <input type="text" name="chatValue" ng-model="data.chatValue" class="form-control" placeholder="Digite a url de chat aqui"/>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <div class="form-group col-md-12">
+                        <br>
+                        <label>
+                            <input type="checkbox" ng-model="data.leftJustify"> texto a esquerda
+                        </label>
+                        <br>
+                        <label>
+                            <input type="checkbox" ng-model="data.showIcons" ng-disabled="!data.leftJustify"> ativar logos
+                        </label>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label>
+                            <input ng-model="data.callMe" type="checkbox" checked="true" id="exampleCheck1"> Call Me
+                        </label>
+                        <br>
+                        <input type="text" name="callMePhrase" ng-model="data.callMePhrase" class="form-control" />
+                        <input type="text" name="callMeValue" ng-model="data.callMeValue" class="form-control" placeholder="Digite o numero aqui"/>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label>
+                            <input ng-model="data.callMeLater" type="checkbox" checked="true" id="exampleCheck1"> Call Me Later
+                        </label>
+                        <input type="text" name="callMeLaterPhrase" ng-model="data.callMeLaterPhrase" class="form-control" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label>
+                            <input ng-model="data.call" type="checkbox" checked="true" id="exampleCheck1"> Call
+                        </label>
+                        <input type="text" name="callPhrase" ng-model="data.callPhrase" class="form-control" />
+                        <input type="text" name="callValue" ng-model="data.callValue" class="form-control" placeholder="Digite o numero aqui" />
+                    </div>
+                    <div class="form-group col-md-12">
+    
+                        <label>
+                            <input ng-model="data.email" type="checkbox" checked="true" id="exampleCheck1"> Enviar E-mail
+                        </label>
+                        <input type="text" name="sendEmailPhrase" ng-model="data.emailPhrase" class="form-control" />
+                        <input type="text" name="sendEmailValue" ng-model="data.emailValue" class="form-control" placeholder="Digite o email aqui" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label>
+                            <input ng-model="data.whatsapp" type="checkbox" checked="true" id="exampleCheck1"> Whatsapp
+                        </label>
+                        <input type="text" name="whatsappPhrase" ng-model="data.whatsappPhrase" class="form-control" />
+                        <input type="text" name="whatsappValue" ng-model="data.whatsappValue" class="form-control" placeholder="Digite o numero aqui" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label>
+                            <input ng-model="data.chat" type="checkbox" checked="true" id="exampleCheck1"> chat
+                        </label>
+                        <input type="text" name="chatPhrase" ng-model="data.chatPhrase" class="form-control" />
+                        <input type="text" name="chatValue" ng-model="data.chatValue" class="form-control" placeholder="Digite a url de chat aqui"/>
+                    </div>
                 </div>
             </div>
+            <div class="mx-auto">
+                <input type="button" name="btn" value="Submit" id="submitBtn" data-toggle="modal" data-target="#confirm-submit" ng-click="buildJson()"
+                    class="btn btn-success btn-lg" />
+            </div>
+        </form>
+        <div class="templateModel">
+            <%- include(templateRouter) %>
         </div>
-        <div class="mx-auto">
-            <input type="button" name="btn" value="Submit" id="submitBtn" data-toggle="modal" data-target="#confirm-submit" ng-click="buildJson()"
-                class="btn btn-success btn-lg" />
-        </div>
-    </form>
-    <div class="templateModel">
-        <%- include(templateRouter) %>
     </div>
 </body>
 
