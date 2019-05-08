@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Triplice</title>
     <style>
         .template-model {
-            width: 340px;
             display: inline-block;
-            margin-left: 100px; 
+            margin-left: 50px; 
         }
         .template-model img{
             width: 300px;
-            margin: 20px;
+            margin: 10px;
         }
 
         .template-model img:hover{
@@ -27,20 +27,22 @@
     </style>
 </head>
 <body>
-    <img style="width:200px;" src="http://localhost:3000/images/beta.png" alt="beta">
-    <h1 class="title">
-        Escolha entre um dos três templates:
-    </h1>
     <div class="container">
-        <a id="template1" class="template-model" href="template/model1">
-            <img src="http://localhost:3000/images/template1.png" alt="padrão">
-        </a>
-        <a id="template2" class="template-model" href="template/model2">
-            <img src="http://localhost:3000/images/templateEmConstrucao.png" alt="alternativa 1">
-        </a>
-        <a id="template3" class="template-model" href="template/model3">
-            <img src="http://localhost:3000/images/templateEmConstrucao.png" alt="alternativa 2">
-        </a>
+        <img style="width:200px;float: left;position: absolute;z-index:1;opacity: .2;"src="http://localhost:3000/images/beta.png" alt="beta">
+        <h1 class="title">
+            Escolha entre um dos três templates:
+        </h1>
+        <div class="row">
+            <a id="template1" class="template-model" href="template/model1">
+                <img src="http://localhost:3000/images/template1.png" alt="padrão">
+            </a>
+            <a id="template2" class="template-model" href="template/model2">
+                <img src="http://localhost:3000/images/templateEmConstrucao.png" alt="alternativa 1">
+            </a>
+            <a id="template3" class="template-model" href="template/model3">
+                <img src="http://localhost:3000/images/templateEmConstrucao.png" alt="alternativa 2">
+            </a>
+        </div>
     </div>
 </body>
 </html>
