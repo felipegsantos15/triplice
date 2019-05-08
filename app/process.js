@@ -136,7 +136,22 @@ const router = {
                         ]
                     }
                 ],
+                "options": {
+                    "geolocalization": JSON.parse(data.geolocalization)
+                },
                 "actions": [
+                    {
+                        "name": "negotiation",
+                        "icon": "ion-android-call",
+                        "click": "negotiation",
+                        "options": [],
+                        "value": JSON.parse(data.autoNegotiation),
+                        "input": JSON.parse(data.autoNegotiation),
+                        "inputValue": data.autoNegotiationValue,
+                        "labelValue": data.autoNegotiationPhrase,
+                        "label": data.callPhrase,
+                        "inputClass": "number"
+                    },
                     {
                         "name": "call",
                         "icon": "ion-android-call",
