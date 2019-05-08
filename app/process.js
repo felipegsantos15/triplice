@@ -73,37 +73,50 @@ const router = {
                         },
                         "actions": [
                             {
+                                "name": "negotiationOnline",
+                                "icon": "ion-android-call",
+                                "click": "negotiationOnline",
+                                "options": [],
+                                "value": JSON.parse(data.autoNegotiation),
+                                "input": JSON.parse(data.autoNegotiation),
+                                "inputValue": data.autoNegotiationValue,
+                                "labelValue": data.autoNegotiationPhrase,
+                                "label": data.callPhrase,
+                                "inputClass": "number"
+                            },
+                            {
                                 "name": "call",
                                 "icon": "ion-android-call",
                                 "click": "call",
                                 "options": [],
-                                "value": true,
-                                "input": true,
-                                "inputValue": "",
-                                "labelValue": "Numero Ligar",
-                                "label": "Você me liga"
+                                "value": JSON.parse(data.call),
+                                "input": JSON.parse(data.call),
+                                "inputValue": data.callValue,
+                                "labelValue": data.callPhrase,
+                                "label": data.callPhrase,
+                                "inputClass": "number"
                             },
                             {
                                 "name": "redirectToEmail",
                                 "icon": "ion-email",
                                 "click": "redirectToEmail",
                                 "options": [],
-                                "value": true,
-                                "input": true,
-                                "inputValue": "",
-                                "labelValue": "Mandar um E-mail",
-                                "label": "E-mail"
+                                "value": JSON.parse(data.email),
+                                "input": JSON.parse(data.email),
+                                "inputValue": data.emailValue,
+                                "labelValue": data.emailPhrase,
+                                "label": data.emailPhrase
                             },
                             {
                                 "name": "callMe",
                                 "icon": "ion-android-call",
                                 "click": "callMe",
                                 "span": "(grátis)",
-                                "value": false,
-                                "input": false,
-                                "inputValue": "",
-                                "labelValue": "Numero Ligue-me",
-                                "label": "Eu te ligo agora",
+                                "value": JSON.parse(data.callMe),
+                                "input": JSON.parse(data.callMe),
+                                "inputValue": data.callMeValue,
+                                "labelValue": data.callMePhrase,
+                                "label": data.callMePhrase,
                                 "inputClass": "number"
                             },
                             {
@@ -112,10 +125,10 @@ const router = {
                                 "click": "callMeLater",
                                 "span": "(grátis)",
                                 "options": [],
-                                "value": false,
-                                "input": false,
-                                "labelValue": "Ligue-me mais tarde",
-                                "label": "Eu te ligo mais tarde",
+                                "value": JSON.parse(data.callMeLater),
+                                "input": JSON.parse(data.callMeLater),
+                                "labelValue": data.callMeLaterPhrase,
+                                "label": data.callMeLaterPhrase,
                                 "inputClass": "number"
                             },
                             {
@@ -123,22 +136,23 @@ const router = {
                                 "icon": "ion-social-whatsapp-outline",
                                 "click": "whatsapp",
                                 "options": [],
-                                "value": true,
-                                "input": true,
-                                "inputValue": "",
-                                "labelValue": "Numero WhatsApp",
-                                "label": "Fale conosco pelo WhatsApp"
+                                "value": JSON.parse(data.whatsapp),
+                                "input": JSON.parse(data.whatsapp),
+                                "inputValue": data.whatsappValue,
+                                "labelValue": data.whatsappPhrase,
+                                "label": data.whatsappPhrase,
+                                "inputClass": "number"
                             },
                             {
                                 "name": "chat",
                                 "icon": "ion-chatbubbles",
                                 "click": "chat",
                                 "options": [],
-                                "value": false,
-                                "input": false,
-                                "inputValue": "",
-                                "labelValue": "Url Chat",
-                                "label": "Chat"
+                                "value": JSON.parse(data.chat),
+                                "input": JSON.parse(data.chat),
+                                "inputValue": data.chatValue,
+                                "labelValue": data.chatPhrase,
+                                "label": data.chatPhrase
                             }
                         ]
                     }
