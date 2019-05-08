@@ -24,12 +24,14 @@
             $scope.data.bodyText = 'A marca Pontal representa o progresso diante de um cenário cada vez mais desafiador: conectar empresas com seus públicos de forma ágil e moderna.';
             $scope.data.footerImg = '../images/pontal_telecom-logo.png';
             $scope.data.footerLink = 'www.pontaltelcom.com.br';
+            $scope.data.autoNegotiation = true;
             $scope.data.callMe = true;
             $scope.data.callMeLater = true;
             $scope.data.call = true;
             $scope.data.email = true;
             $scope.data.chat = true;
             $scope.data.whatsapp = true;
+            $scope.data.autoNegotioationPhrase = 'Negocie Agora';
             $scope.data.callMePhrase = 'Ligue-me';
             $scope.data.callMeLaterPhrase = 'Ligue-me mais tarde';
             $scope.data.callPhrase = 'Ligar';
@@ -48,6 +50,7 @@
             $scope.data.chatValue = '';
             $scope.data.whatsappValue = '';
             $scope.data.sendEmailValue = '';
+            $scope.data.geolocalization = false;
 
             $scope.buildJson = () => {
                 $http({
@@ -80,11 +83,13 @@
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
-                        aria-selected="true">estilos</a>
+                        aria-selected="true">Estilos</a>
                     <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
-                        aria-selected="false">textos</a>
+                        aria-selected="false">Textos</a>
                     <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
-                        aria-selected="false">botoes</a>
+                        aria-selected="false">Botões</a>
+                    <a class="nav-item nav-link" id="nav-options-tab" data-toggle="tab" href="#nav-options" role="tab" aria-controls="nav-options"
+                        aria-selected="false">Opções</a>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
@@ -145,6 +150,14 @@
                     </div>
                     <div class="form-group col-md-12">
                         <label>
+                            <input ng-model="data.autoNegotiation" type="checkbox" checked="true" id="exampleCheck1"> Auto-Negociação
+                        </label>
+                        <br>
+                        <input type="text" name="autoNegotioationPhrase" ng-model="data.autoNegotioationPhrase" class="form-control" />
+                        <input type="text" name="autoNegotiationValue" ng-model="data.autoNegotiationValue" class="form-control" placeholder="Digite o numero aqui"/>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label>
                             <input ng-model="data.callMe" type="checkbox" checked="true" id="exampleCheck1"> Call Me
                         </label>
                         <br>
@@ -185,6 +198,14 @@
                         </label>
                         <input type="text" name="chatPhrase" ng-model="data.chatPhrase" class="form-control" />
                         <input type="text" name="chatValue" ng-model="data.chatValue" class="form-control" placeholder="Digite a url de chat aqui"/>
+                    </div>
+                </div>
+                <div id="nav-options" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-options-tab"> 
+                    <div class="form-group col-md-12">
+                        <br>
+                        <label>
+                            <input type="checkbox" ng-model="data.geolocalization"> Geolocalização
+                        </label>
                     </div>
                 </div>
             </div>

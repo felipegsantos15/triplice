@@ -1,4 +1,5 @@
 <nav>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
 <header>
     <img class="logo" src="{{data.logoImg}}">
     <div style="clear:both;"></div>
@@ -7,7 +8,8 @@
             background-image: url({{data.backgroundImg}});
         }
         section {
-            background-color: {{data.backgroundColor }}; 
+            margin-bottom: 50px;
+            background-color: {{data.backgroundColor }};
         }
         header{
             background-color: {{data.backgroundColor }}; 
@@ -32,7 +34,16 @@
                {{data.bodyText}}
             </p>
             <div >
-                <button class="button primaryColor" ng-show="data.callMe" href="">
+                <button class="button primaryColor" ng-show="data.autoNegotiation" href="">
+                    <div ng-hide="data.leftJustify">
+                        {{data.autoNegotioationPhrase}}
+                    </div>
+                    <div class="toLeft" ng-hide="!data.leftJustify">
+                        <i class="fas fa-phone" ng-hide="!data.showIcons"></i>
+                        {{data.autoNegotioationPhrase}}
+                    </div>
+                </button>
+                <button class="button secundaryColor" ng-show="data.callMe" href="">
                     <div ng-hide="data.leftJustify">
                         {{data.callMePhrase}}
                     </div>
