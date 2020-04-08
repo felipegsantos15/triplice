@@ -6,7 +6,7 @@ Ferramenta para rapida criação de landing pages pré definidas
  - Habilite o servidor usando `node index.js`
  - Acesse `localhost:3000` escolha dentre um dos templates disponiveis
  - Edite e configure dentre o que for necessario
- - Clique em salvar e consulte sua tabela `interactive_link_template`
+ - Clique em salvar e consulte sua tabela indicada no env
  - Agora faça os testes locais adequados
 
 ## Atualize me:
